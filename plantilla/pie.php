@@ -1,7 +1,16 @@
 </body>
 <footer>
-    <p>Diseño de pie</p>
+  <div class="contenedor">
+    <div class="sociales">
+      <a class="icon-facebook-squared" href="https://www.facebook.com"></a>
+      <a class="icon-twitter" href="https://www.twitter.com"></a>
+      <a class="icon-instagram" href="https://www.instagram.com"></a>
+  </div>
+      <p class="copy" >&copy; 2022 Mandaditos.</p>
+  </div>
 </footer>
+
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </html>

@@ -1,15 +1,22 @@
+
 <header>
-    <div class="fixed-top">
-    <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-    <h5 class="text-white h4">Collapsed content</h5>
-    <span class="text-muted">Toggleable via the navbar brand.</span>
-    </div>
-    </div>
-    <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    </nav>
-    </div>
+  <div class="submenu1">
+      <a href="#" id="nombreUsuarioActivo"><img src="./img/user.png" alt=""></a>
+  </div>
+  <div class="contenedor">
+    
+      <a href="./index.html" id="Logo"><img src="./img/man.png" alt="logo" width="400px" height="90px"></a>
+     
+      <input type="checkbox" name="" id="menuBar">
+            <label class="icon-menu" for="menuBar"></label>
+      <nav class="menu">
+          <a href="./index.html">Inicio</a>
+          <a href="">Clientes</a>
+          <a href="">Empleados</a>
+          <a href="">Ordenes</a>
+          <a href="">Comercio</a>
+      </nav>
+
+  </div>
+</header>
 </header>
