@@ -1,16 +1,15 @@
 <?php
+
 class Factura {
-    
     private $factura;
     private $db;
 
+
     public function __construct() {
         $this->factura = array();
-        //tipo de conexion
-        $this->db = new PDO('mysql:host=localhost;dbname=mandaditos');
-        //PDO se utiliza para diferentes gestores de datos
+        $this->db = new PDO('mysql:host=localhost;dbname=mandaditos', "doris", "123456");
     }
-
+   
     private function setNames() {
         return $this->db->query("SET NAMES 'utf8'");
     }

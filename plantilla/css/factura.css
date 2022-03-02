@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'MyWebFont', Fallback, sans-serif;
+}
+
+main{
+  min-height: calc(100vh - 150px - 120px);
+}
+
+.contenedorProduct{
+  width: 100%;
+  margin: auto;
+}
+
+.form-contacto{
+  width: 800px;
+  background: white;
+  padding: 30px;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 4px;
+  border: 1px solid rgb(53, 50, 50);
+  border-color: grey;
+  color: white;
+  box-shadow: 2px 2px 5px gray;
+  margin-bottom: 50px;
+}
+
+.caja{
+width:100% ;
+background:white ;
+padding: 15px;
+border-radius: 5px;
+margin-bottom: 10px;
+border: 1px solid gray;
+font-size: 14px;
+}
+
+.form-contacto .boton {
+  width: 30%;
+  background: rgb(23, 123, 255);
+  border: none;
+  padding: 14px;
+  color: white;
+  margin: 16px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-contacto img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+label{
+  color: black;
+}
+

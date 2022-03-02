@@ -1,5 +1,5 @@
 <?php
-include_once('..modelos/modeloPersona.php');
+include_once('../modelos/modeloFactura.php');
 function listar(){
     $modeloFactura = new Factura();
     return $modeloFactura->getFactura();

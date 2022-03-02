@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/footer.css">
       <link rel="stylesheet" href="./css/fontello.css">
       <link rel="stylesheet" href="./css/header.css">
-      <link rel="stylesheet" href="./css/Inicio.css">
-    <title>Plantilla</title>
+      <link rel="stylesheet" href="./css/factura.css">
+    <title>Mandaditos</title>
 </head>
 <body>
