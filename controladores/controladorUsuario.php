@@ -1,5 +1,5 @@
 <?php
-    include_once('modelos/modeloUsuario.php');
+    include_once('../modelos/modeloUsuarios.php');
     function listar(){
         $modeloUsuario = new Usuario();
         return $modeloUsuario -> getUsuarios();
