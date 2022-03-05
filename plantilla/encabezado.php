@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="./css/fontello.css">
       <link rel="stylesheet" href="./css/header.css">
       <link rel="stylesheet" href="./css/factura.css">
+      <link rel="stylesheet" href="./css/agregarUsuario.css">
     <title>Mandaditos</title>
 </head>
 <body>

@@ -4,7 +4,7 @@
 ?>
 
 <?php
-    include_once('../vistas/paginaPrincipal.php');
+    include_once('../vistas/agregarUsuarios.php');
 ?>
 
 <?php
