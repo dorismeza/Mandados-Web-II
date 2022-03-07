@@ -18,6 +18,25 @@ class Usuario {
         
         return $result = mysqli_query($conexion, $sql);
     }
+
+    public function actualizar($datos){
+        $c = new conexion();
+        $conexion = $c -> conexion();
+
+        $sql = "UPDATE usuarios SET Usuario = '$datos[0]', 
+                                    Contrasena = '$datos[1]',
+                                    TipoUsuario = '$datos[2]'
+                                    WHERE IdUsuario = '$datos[3]'";
+        return $result = mysqli_query($conexion, $sql);
+    }
+
+    public function eliminar($id){
+        $c = new conexion();
+        $conexion = $c -> conexion();
+        $sql = "DELETE FROM usuarios WHERE IdUsuario = '$id'";
+
+        return $result = mysqli_query($conexion, $sql);
+    }
     
 }
 ?>

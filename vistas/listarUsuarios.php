@@ -22,12 +22,14 @@ include_once('../modelos/modeloUsuarios.php');
 
         <tbody>
           <?php
-          for($i=0;$i<count($datos);$i++){?>
+          foreach($datos as $key){?>
           <tr>
-            <th scope="row"><?php echo $datos[$i]["IdUsuario"];?></th>
-            <th scope="row"><?php echo $datos[$i]["Usuario"];?></th>
-            <th scope="row"><?php echo $datos[$i]["Contrasena"];?></th>
-            <th scope="row"><?php echo $datos[$i]["TipoUsuario"];?></th>
+            <th scope="row"><?php echo $key["IdUsuario"];?></th>
+            <th scope="row"><?php echo $key["Usuario"];?></th>
+            <th scope="row"><?php echo $key["Contrasena"];?></th>
+            <th scope="row"><?php echo $key["TipoUsuario"];?></th>
+            <th> <a href = "../plantilla/paginaActualizarUsuario.php?IdUsuario = <?php echo $key['IdUsuario'] ?>"> Editar </a></th>
+            <th> <a href = "../controladores/EliminarUsuario.php?IdUsuario = <?php echo $key['IdUsuario'] ?>"> Eliminar </a></th>
           </tr>
           <?php } ?>
         </tbody>
