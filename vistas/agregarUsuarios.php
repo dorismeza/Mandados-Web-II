@@ -1,3 +1,11 @@
+
+<?php
+   session_start();
+    if(isset($_SESSION['username'])){
+        header("location: ../plantilla/paginaLogin.php" );
+    }else{
+
+?>
 <?php
 include_once('../controladores/conexion.php');
 include_once('../modelos/modeloUsuarios.php');
@@ -50,6 +58,8 @@ include_once('../modelos/modeloUsuarios.php');
         </div>
     </form>
   </section>
-
+  <?php
+   }
+?>
 
 

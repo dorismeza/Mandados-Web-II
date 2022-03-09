@@ -1,4 +1,11 @@
 <?php
+   session_start();
+    if(isset($_SESSION['username'])){
+        header("location: ../plantilla/paginaLogin.php" );
+    }else{
+
+?>
+<?php
     include_once('../controladores/controladorEmpleado.php');
 ?>
 <main class="container">
@@ -30,3 +37,6 @@
     </div>
 
   </main>
+  <?php
+   }
+?>

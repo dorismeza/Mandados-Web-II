@@ -1,9 +1,25 @@
+<?php
+ session_start();
+ $usuario = $_SESSION['username'];
 
+  if(!isset($_SESSION['username'])){
+    header("location: ../plantilla/paginaLogin.php ");
+  }
+  else{
+      if(isset($_COOKIE['username'])){
+          $cont = $_COOKIE[$usuario];
+          setcookie($usuario,$cont + 1,time()+3600);
+      }else{
+          setcookie($usuario,1,time()+3600);
+    }
+?>
   <main class="contenedorIni">
     <div class="container" >
       <div>
-      <h5 class="card-title"> Bienvenido(a); <?php echo $user->getNombre();?></h5>
-      </div>
+      <h5 class="card-title"> Bienvenido(a); <?php 
+        echo $usuario;
+     ?></h5>
+     </div>
       <br>
       <div class="row row-cols-1 row-cols-md-2">
           <div class="col mb-6">
@@ -50,3 +66,6 @@
       </div>
   </div>
   </main>
+  <?php
+  }
+  ?>
