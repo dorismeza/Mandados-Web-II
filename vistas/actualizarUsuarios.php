@@ -1,3 +1,11 @@
+
+<?php
+   session_start();
+    if(isset($_SESSION['username'])){
+        header("location: ../plantilla/paginaLogin.php" );
+    }else{
+
+?>
 <?php
 include_once('../controladores/conexion.php');
 $obj = new conexion();
@@ -47,3 +55,6 @@ $ver = mysqli_fetch_row($result);
         </div>
     </form>
   </section>
+  <?php
+   }
+?>

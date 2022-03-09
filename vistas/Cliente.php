@@ -1,4 +1,10 @@
+<?php
+   session_start();
+    if(isset($_SESSION['username'])){
+        header("location: ../plantilla/paginaLogin.php" );
+    }else{
 
+?>
 <?php include("../BD/dbC.php"); ?>
 
 
@@ -75,5 +81,7 @@
     </div>
   </div>
 </main>
-
+<?php
+   }
+?>
 
