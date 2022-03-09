@@ -21,19 +21,15 @@ USE `mandaditos`;
 -- Table structure for table `clientes`
 --
 
-DROP TABLE IF EXISTS `clientes`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `clientes` (
-  `Id` int NOT NULL AUTO_INCREMENT,
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
   `Nombre` varchar(150) NOT NULL,
   `Apellido` varchar(150) NOT NULL,
   `Telefono` varchar(8) NOT NULL,
-  `IdDireccion` int NOT NULL,
-  PRIMARY KEY (`Id`),
-  KEY `IdDireccion_idx` (`IdDireccion`),
-  CONSTRAINT `IdDireccion` FOREIGN KEY (`IdDireccion`) REFERENCES `direccion` (`IdDireccion`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `Direccion` varchar(150) NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
+ COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
