@@ -13,7 +13,7 @@ class Usuario {
         $c = new conexion();
         $conexion = $c -> conexion();
 
-        $sql = "INSERT INTO usuarios (Usuario, Contrasena, TipoUsuario)
+        $sql = "INSERT INTO usuarios (Usuario, Contrasena, IdTipoUsuario)
                 VALUES ('$datos[0]', '$datos[1]', '$datos[2]')";
         
         return $result = mysqli_query($conexion, $sql);
@@ -25,7 +25,7 @@ class Usuario {
 
         $sql = "UPDATE usuarios SET Usuario = '$datos[0]', 
                                     Contrasena = '$datos[1]',
-                                    TipoUsuario = '$datos[2]'
+                                    IdTipoUsuario = '$datos[2]'
                                     WHERE IdUsuario = '$datos[3]'";
         return $result = mysqli_query($conexion, $sql);
     }

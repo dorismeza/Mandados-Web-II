@@ -39,6 +39,7 @@ else{*/
                ?>
             </p>
                 <input type="submit" class="boton" id="btnIngresar" value="Iniciar Sesion" name="btnIniciar">
+                <a href = "../plantilla/paginaAgregarUsuario.php"> Registrarse </a>
                 </form>
             </div>
         </div>

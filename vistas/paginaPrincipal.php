@@ -43,6 +43,7 @@
               <div class="card-body">
                 <h5 class="card-title">Usuario</h5>
                 <a class="btn btn-primary" href="../plantilla/paginaAgregarUsuario.php" role="button">Registrar</a>
+                <a class="btn btn-primary" href = "../plantilla/paginaListarUsuarios.php" role="button"> Ver Usuarios</a>
               </div>
             </div>
           </div>
