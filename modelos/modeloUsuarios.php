@@ -26,7 +26,7 @@ class Usuario {
         $sql = "UPDATE usuarios SET Usuario = '$datos[0]', 
                                     Contrasena = '$datos[1]',
                                     IdTipoUsuario = '$datos[2]'
-                                    WHERE IdUsuario = '$datos[3]'";
+                                    WHERE Idusuario = '$datos[3]'";
         return $result = mysqli_query($conexion, $sql);
     }
 

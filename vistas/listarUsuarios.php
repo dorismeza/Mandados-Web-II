@@ -28,8 +28,8 @@ include_once('../modelos/modeloUsuarios.php');
             <th scope="row"><?php echo $key["Usuario"];?></th>
             <th scope="row"><?php echo $key["Contrasena"];?></th>
             <th scope="row"><?php echo $key["IdTipoUsuario"];?></th>
-            <th> <a href = "../plantilla/paginaActualizarUsuario.php?IdUsuario = <?php echo $key['IdUsuario'] ?>"> Editar </a></th>
-            <th> <a href = "../controladores/EliminarUsuario.php?IdUsuario = <?php echo $key['IdUsuario'] ?>"> Eliminar </a></th>
+            <th> <a href = "../plantilla/paginaActualizarUsuario.php?IdUsuario = <?php echo $key['IdUsuario']; ?>"> Editar </a></th>
+            <th> <a href = "../controladores/EliminarUsuario.php?IdUsuario = <?php echo $key['IdUsuario']; ?>"> Eliminar </a></th>
           </tr>
           <?php } ?>
         </tbody>

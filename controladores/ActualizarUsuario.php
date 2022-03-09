@@ -5,13 +5,13 @@ include_once('../modelos/modeloUsuarios.php');
     
     $Usuario = $_POST['Usuario'];
     $Contrasena = $_POST['Contrasena'];
-    $TipoUsuario = $_POST['TipoUsuario'];
+    $IdTipoUsuario = $_POST['IdTipoUsuario'];
     $IdUsuario = $_POST['IdUsuario'];
 
     $datos = array(
         $Usuario,
         $Contrasena,
-        $TipoUsuario,
+        $IdTipoUsuario,
         $IdUsuario
     );
 

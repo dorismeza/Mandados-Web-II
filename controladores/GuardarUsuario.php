@@ -4,12 +4,12 @@ include_once('../modelos/modeloUsuarios.php');
     
     $Usuario = $_POST['Usuario'];
     $Contrasena = $_POST['Contrasena'];
-    $TipoUsuario = $_POST['TipoUsuario'];
+    $IdTipoUsuario = $_POST['IdTipoUsuario'];
 
     $datos = array(
         $Usuario,
         $Contrasena,
-        $TipoUsuario
+        $IdTipoUsuario
     );
 
     $obj = new Usuario();

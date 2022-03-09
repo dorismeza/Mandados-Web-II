@@ -20,14 +20,25 @@ include_once('../modelos/modeloUsuarios.php');
             <input type="password" class="form-control" name="Contrasena">
           </div>
 
-          <div class = "form-group">
+          <!--<div class = "form-group">
           <label for="inputState">Tipo Usuario</label>
-            <select id="inputState" class="form-control" name="TipoUsuario">
+          <input class="form-control" name="IdTipoUsuario">
+            <select id="inputState" class="form-control" name="IdTipoUsuario">
               <option selected>Tipo...</option>
-              <option>Empleado</option>
-              <option>Administrador </option>
+              <option>1</option>
+              <option>2</option>
             </select>
-          </div>
+            
+          </div>-->
+
+
+          <form class="form-group">
+            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Tipo Usuario</label>
+              <select class="custom-select my-1 mr-sm-2" name="IdTipoUsuario">
+                <option selected>Elige...</option>
+                <option value="1">Administrador</option>
+                <option value="2">Usuario</option>
+              </select>
           
           
           <div class = "form-group">
