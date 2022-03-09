@@ -38,7 +38,7 @@ if (isset($_POST['update'])) {
   <div class="row">
     <div class="col-md-4 mx-auto">
       <div class="card card-body">
-      <form action="plantilla/paginaAgregarClientes.php?Id=<?php echo $_GET['Id']; ?>" method="POST">
+      <form action="ActualizarClientes.php?Id=<?php echo $_GET['Id']; ?>" method="POST">
         <div class="form-group">
           <input name="Nombre" type="text"  required="" pattern="[a-zA-Z]+" class="form-control" value="<?php echo $Nombre; ?>" placeholder="Update Nombre">
         </div>
