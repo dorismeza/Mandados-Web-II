@@ -10,6 +10,8 @@
       <link rel="stylesheet" href="./css/header.css">
       <link rel="stylesheet" href="./css/factura.css">
       <link rel="stylesheet" href="./css/agregarUsuario.css">
+      <link rel="stylesheet" href="./css/Login.css">
+      <link rel="stylesheet" href="./css/carrito.css">
     <title>Mandaditos</title>
 </head>
 <body>

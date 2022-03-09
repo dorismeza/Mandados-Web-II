@@ -1,8 +1,8 @@
-
+<body>
 <section>
 <header>
   <div class="submenu1">
-      <a href="#" id="nombreUsuarioActivo"><img src="./img/user.png" alt=""></a>
+  <a href="#" id="nombreUsuarioActivo"><img src="./img/user.png" alt=""></a>
   </div>
   <div class="contenedor">
     
@@ -10,7 +10,7 @@
       <input type="checkbox" name="" id="menuBar">
             <label class="icon-menu" for="menuBar"></label>
       <nav class="menu">
-          <a href="./index.html">Inicio</a>
+          <a href="#">Inicio</a>
           <a href="">Clientes</a>
           <a href="">Empleados</a>
           <a href="">Ordenes</a>

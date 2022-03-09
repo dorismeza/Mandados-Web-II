@@ -1,0 +1,54 @@
+@media (min-width : 750px){
+  
+}
+
+.borrar-platillo{
+
+  background-color:white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: rgb(71,71,71);
+  font-weight: bold;
+
+}
+
+ul{
+  list-style: none;
+}
+
+.submenu {
+  position: relative;
+}
+.submenu #carrito{
+  display: none;
+}
+
+.submenu:hover #carrito{
+  display: block;
+  color: black;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background: black;
+  padding: 20px;
+}
+
+.vacio{
+  padding: 10px;
+  background-color: black;
+  text-align: center;
+  border-radius: 0px;
+  color: white;
+}
+
+.vaciar{
+  padding: 10px;
+  background-color: white;
+  background: black;
+  text-align: center;
+  border-radius: 0%;
+  color: white;
+}
+
