@@ -2,7 +2,7 @@
   <main class="contenedorIni">
     <div class="container" >
       <div>
-      <h5 class="card-title"> Bienvenido(a); <?php echo $user->getNombre();?></h5>
+      <h5 class="card-title"> Bienvenido(a); <?php //echo $user->getNombre();?></h5>
       </div>
       <br>
       <div class="row row-cols-1 row-cols-md-2">

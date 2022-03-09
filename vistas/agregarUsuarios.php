@@ -36,8 +36,8 @@ include_once('../modelos/modeloUsuarios.php');
             <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Tipo Usuario</label>
               <select class="custom-select my-1 mr-sm-2" name="IdTipoUsuario">
                 <option selected>Elige...</option>
-                <option value="1">Administrador</option>
-                <option value="2">Usuario</option>
+                <option>Administrador</option>
+                <option>Usuario</option>
               </select>
           
           
