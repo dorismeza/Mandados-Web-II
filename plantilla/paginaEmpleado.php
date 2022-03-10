@@ -6,7 +6,3 @@
 <?php
     include_once('../vistas/empleado.php');
 ?>
-
-<?php
-    include_once('pie.php');
-?>

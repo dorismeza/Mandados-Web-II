@@ -71,7 +71,7 @@ include('../login/conexion.php');
             $query_comercio=mysqli_query ($conection,"SELECT  IdComercio,NombreComercio
               FROM comercio ");
             $result_comercio = mysqli_num_rows($query_comercio);
-            mysqli_close($conection);
+          
             ?>
 
                 <select name="IdComercio" id="IdComercio" class="controls1">
@@ -108,8 +108,72 @@ include('../login/conexion.php');
 
         <br> <br>
         <input class="botons" type="submit" value="Registrar" name="enviar">
+        <br> <br>
+     
         
       </section>
+<br><br><br>
+      <section id="container">  
+        <h1>Lista de Productos </h1><br><br>
+     
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Comercio</th>
+                <th>NombreProducto</th>
+                <th>descripcion</th>
+                <th>CategoriaProducto</th>
+                <th>precio</th>
+                <th>foto</th>
+                <th>Acciones</th>
+            </tr>
+            <?php
+            $query = mysqli_query($conection, "SELECT a.IdProductos,b.NombreComercio,a.NombreProducto
+                                         ,a.CategoriaProducto, a.descripcion ,a.precio,a.foto
+                                from productoscomercio a
+                                INNER JOIN comercio b
+                                ON a.IdComercio = b.IdComercio 
+                                 ");
+             
+                
+                $result = mysqli_num_rows ($query);
+                if($result > 0){
+                    while($data = mysqli_fetch_array($query)){
+                        if($data ['foto']!='img_producto.png'){
+                            $foto = 'img/'.$data['foto'];
+                        }/*else{
+                            $foto='img/'.$data['foto'];
+                        }*/
+                 
+                ?>
+            <tr>
+                <th><?php echo $data["IdProductos"] ?></th>
+                <th><?php echo $data["NombreComercio"] ?></th>
+                <th><?php echo $data["NombreProducto"] ?></th>
+                <th><?php echo $data["CategoriaProducto"] ?></th>
+                <th><?php echo $data["descripcion"] ?></th>
+                <th><?php echo $data["precio"] ?></th>
+                <th><img src="<?php echo $foto; ?>" alt="<?php echo $data["descripcion"] ?>"></th>
+                <td>
+                <a href="ActualizarProducto.php?id=<?php echo $data["IdProductos"];
+                 ?>" class="link_edit">Editar </a>
+                <a href="EliminarUsuario.php?id=<?php echo $data["IdProductos"];
+                 ?>" class="link_edit">Eliminar </a>
+                </td>
+            </tr>
+            <?php
+        }
+    }
+?>
+        </table>
+    
+    </section>              
+
+
+
+
+
+
     </form>
 <br><br><br><br>
 </main>

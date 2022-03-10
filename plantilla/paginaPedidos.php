@@ -4,6 +4,6 @@
 ?>
 
 <?php
-    include_once('../modelos/GuardarEmpleados.php');
+    include_once('../vistas/Pedidos.php');
 ?>
 

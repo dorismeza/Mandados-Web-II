@@ -7,6 +7,3 @@
     include_once('../vistas/Productos.php');
 ?>
 
-<?php
-    include_once('pie.php');
-?>

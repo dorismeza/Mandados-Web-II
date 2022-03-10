@@ -6,7 +6,3 @@
 <?php
     include_once('../modelos/ActualizarCliente.php');
 ?>
-
-<?php
-    include_once('pie.php');
-?>

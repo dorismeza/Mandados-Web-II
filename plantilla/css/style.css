@@ -145,7 +145,7 @@ body {
 
   .form-register1 {
     width: 1200px;
-    background: #f37847;
+    background: #064739;
     padding: 50px;
     margin: auto;
     margin-top: 100px;
@@ -161,11 +161,11 @@ body {
   
   .controls1 {
     width: 100%;
-    background: #7e2206;
+    background: rgb(58, 6, 6);
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #fafafa;
+    border: 1px solid gray;
     font-family: 'calibri';
     font-size: 18px;
     color: rgb(255, 255, 255);
@@ -190,7 +190,7 @@ body {
   
   .form-register1 .botons {
     width: 100%;
-    background: #df4b06;
+    background: #06df59;
     border: none;
     padding: 12px;
     color: white;

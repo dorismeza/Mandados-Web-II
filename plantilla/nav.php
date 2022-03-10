@@ -2,7 +2,7 @@
 <section>
 <header>
   <div class="submenu1">
-  <a href="../login/salir.php" id="nombreUsuarioActivo"><img src="./img/cerrarr.png"  alt=""></a>
+  <a href="../login/salir.php" id="nombreUsuarioActivo"><img src="./img/cerrar.png"  alt=""></a>
   </div>
   <div class="contenedor">
     
@@ -14,6 +14,7 @@
           <a href="paginaCliente.php">Clientes</a>
           <a href="paginaEmpleado.php">Empleados</a>
           <a href="paginaProductos.php">Productos</a>
+          <a href="paginaPedidos.php">Pedidos</a>
       </nav>
   </div>
 </header>

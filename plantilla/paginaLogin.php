@@ -28,6 +28,3 @@
     include_once('../vistas/login.php');
 ?>
 
-<?php
-    include_once('pie.php');
-?>

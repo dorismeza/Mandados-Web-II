@@ -14,12 +14,12 @@
       <a href="pagina.php" id="Logo"><img src="./img/man.png" alt="logo" width="400px" height="90px"></a>
       <input type="checkbox" name="" id="menuBar">
             <label class="icon-menu" for="menuBar"></label>
-      <nav class="menu">
+            <nav class="menu">
           <a href="pagina.php">Inicio</a>
           <a href="paginaCliente.php">Clientes</a>
-          <a ref="paginaUsuario.php">Usuarios</a>
-          <a href="">Empleados</a>
-          <a href="">Productos</a>
+          <a href="paginaEmpleado.php">Empleados</a>
+          <a href="paginaProductos.php">Productos</a>
+          <a href="paginaPedidos.php">Pedidos</a>
       </nav>
   </div>
 </header>
@@ -28,6 +28,4 @@
     include_once('../vistas/paginaPrincipal.php');
 ?>
 
-<?php
-    include_once('pie.php');
-?>
+
