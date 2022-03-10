@@ -1,6 +1,6 @@
 <?php
 
-include('BD/dbC.php');
+include('../BD/dbC.php');
 
 if (isset($_POST['GuardarEmpleados'])) {
   $Nombre = $_POST['NombreEmpleado'];
@@ -15,7 +15,7 @@ if (isset($_POST['GuardarEmpleados'])) {
 
   $_SESSION['message'] = 'Guardado Exitoso!';
   $_SESSION['message_type'] = 'success';
-  header('Location: plantilla/paginaEmpleado.php');
+  header('Location:../plantilla/paginaEmpleado.php');
 
 }
 

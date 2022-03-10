@@ -1,6 +1,6 @@
 <?php
 
-include("BD/dbC.php");
+include("../BD/dbC.php");
 
 if(isset($_GET['IdEmpleado'])) {
   $IdEmpleado = $_GET['IdEmpleado'];
@@ -12,7 +12,7 @@ if(isset($_GET['IdEmpleado'])) {
 
   $_SESSION['message'] = 'El campo se elimino con exito!';
   $_SESSION['message_type'] = 'danger';
-  header('Location: plantilla/paginaEmpleado.php');
+  header('Location: ../plantilla/paginaEmpleado.php');
 }
 
 ?>

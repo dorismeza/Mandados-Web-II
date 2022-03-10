@@ -40,8 +40,8 @@
             <div class="card text-center" style="background-color: rgb(239, 231, 182);">
               <img src="../plantilla/img/tienda.png" class="rounded mx-auto d-block" width="150px" height="150px">
               <div class="card-body">
-                <h5 class="card-title">Comercio</h5>
-                <a class="btn btn-primary" href="../plantilla/paginaComercio.php" role="button">Registrar</a>
+                <h5 class="card-title">Productos</h5>
+                <a class="btn btn-primary" href="../plantilla/paginaProductos.php" role="button">Registrar</a>
               </div>
             </div>
           </div>

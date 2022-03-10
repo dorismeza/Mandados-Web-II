@@ -1,5 +1,5 @@
 <?php
-include("BD/dbC.php");
+include("../BD/dbC.php");
 
 if  (isset($_GET['Id'])) {
   $Id = $_GET['Id'];
@@ -25,11 +25,11 @@ if (isset($_POST['update'])) {
   mysqli_query($conn, $query);
   $_SESSION['message'] = 'Cliente actualizado con exito!';
   $_SESSION['message_type'] = 'warning';
-  header('Location: plantilla/paginaCliente.php');
+  header('Location: ../plantilla/paginaCliente.php');
 }
 
 ?>
-<?php include('plantilla/encabezado.php'); ?>
+<?php include('../plantilla/encabezado.php'); ?>
 <div class="container p-4">
   <div class="row">
     <div class="col-md-4 mx-auto">

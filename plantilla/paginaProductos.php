@@ -4,7 +4,7 @@
 ?>
 
 <?php
-    include_once('../modelos/GuardarEmpleados.php');
+    include_once('../vistas/Productos.php');
 ?>
 
 <?php

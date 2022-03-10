@@ -1,5 +1,5 @@
 <?php
-include("BD/dbL.php");
+include("../BD/dbL.php");
 
 
 $title = '';
@@ -25,11 +25,11 @@ if (isset($_POST['update'])) {
   mysqli_query($connL, $query);
   $_SESSION['message'] = 'Usuario actualizado con exito!';
   $_SESSION['message_type'] = 'warning';
-  header('Location: plantilla/paginaUsuario.php');
+  header('Location: ../plantilla/paginaUsuario.php');
 }
 
 ?>
-<?php include('plantilla/encabezado.php'); ?>
+<?php include('../plantilla/encabezado.php'); ?>
 <div class="container p-4">
   <div class="row">
     <div class="col-md-4 mx-auto">

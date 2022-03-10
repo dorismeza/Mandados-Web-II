@@ -1,6 +1,6 @@
 <?php
 
-include('BD/dbL.php');
+include('../BD/dbL.php');
 
 if (isset($_POST['GuardarUsuario'])) {
   $Usuario = $_POST['Usuario'];
@@ -15,7 +15,7 @@ if (isset($_POST['GuardarUsuario'])) {
 
   $_SESSION['message'] = 'Guardado Exitoso!';
   $_SESSION['message_type'] = 'success';
-  header('Location: plantilla/paginaUsuario.php');
+  header('Location: ../plantilla/paginaUsuario.php');
 
 }
 

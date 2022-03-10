@@ -24,7 +24,7 @@
 
       <!-- ADD TASK FORM -->
       <div class="card card-body">
-        <form action="../GuardarUsuario.php" method="POST">
+        <form action="../modelos/GuardarUsuario.php" method="POST">
           <div class="form-group">
             <input type="text" name="Usuario" required="" pattern="[a-zA-Z]+" class="form-control" placeholder="Usuario" autofocus>
           </div>
@@ -66,9 +66,9 @@
             <td><?php echo $row['IdTipoUsuario']; ?></td>
             <td>
 
-              <a href="../ActualizarUsuario.php?IdUsuario=<?php echo $row['IdUsuario']?>" class="btn btn-secondary">
+              <a href="../modelos/ActualizarUsuario.php?IdUsuario=<?php echo $row['IdUsuario']?>" class="btn btn-secondary">
                 <i class="fas fa-marker"></i>
-              <a href="../EliminarUsuario.php?IdUsuario=<?php echo $row['IdUsuario']?>" class="btn btn-danger">
+              <a href="../modelos/EliminarUsuario.php?IdUsuario=<?php echo $row['IdUsuario']?>" class="btn btn-danger">
                 <i class="far fa-trash-alt"></i>
               </a>
             </td>

@@ -25,7 +25,7 @@
 
       <!-- ADD TASK FORM -->
       <div class="card card-body">
-        <form action="../GuardarClientes.php" method="POST">
+        <form action="../modelos/GuardarClientes.php" method="POST">
           <div class="form-group">
             <input type="text" name="Nombre" required=" " pattern="[a-z A-Z]+" class="form-control" placeholder="Nombre" autofocus>
           </div>
@@ -67,10 +67,10 @@
             <td><?php echo $row['Direccion']; ?></td>
             <td>
 
-              <a href="../ActualizarClientes.php?Id=<?php echo $row['Id']?>" class="btn btn-secondary">
+              <a href="../modelos/ActualizarClientes.php?Id=<?php echo $row['Id']?>" class="btn btn-secondary">
                 <i class="fas fa-marker"></i>
               </a>
-              <a href="../EliminarCliente.php?Id=<?php echo $row['Id']?>" class="btn btn-danger">
+              <a href="../modelos/EliminarCliente.php?Id=<?php echo $row['Id']?>" class="btn btn-danger">
                 <i class="far fa-trash-alt"></i>
               </a>
             </td>

@@ -1,5 +1,5 @@
 <?php
-include("BD/dbC.php");
+include("../BD/dbC.php");
 
 
 
@@ -27,11 +27,11 @@ if (isset($_POST['update'])) {
   mysqli_query($conn, $query);
   $_SESSION['message'] = 'Empleado actualizado con exito!';
   $_SESSION['message_type'] = 'warning';
-  header('Location: plantilla/paginaEmpleado.php');
+  header('Location: ../plantilla/paginaEmpleado.php');
 }
 
 ?>
-<?php include('plantilla/encabezado.php'); ?>
+<?php include('../plantilla/encabezado.php'); ?>
 <div class="container p-4">
   <div class="row">
     <div class="col-md-4 mx-auto">

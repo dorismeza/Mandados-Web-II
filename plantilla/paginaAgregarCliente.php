@@ -4,7 +4,7 @@
 ?>
 
 <?php
-    include_once('../ActualizarCliente.php');
+    include_once('../modelos/ActualizarCliente.php');
 ?>
 
 <?php
