@@ -3,7 +3,7 @@
 include("BD/dbC.php");
 
 if(isset($_GET['IdEmpleado'])) {
-  $Id = $_GET['IdEmpleado'];
+  $IdEmpleado = $_GET['IdEmpleado'];
   $query = "DELETE FROM empleado WHERE IdEmpleado = $IdEmpleado";
   $result = mysqli_query($conn, $query);
   if(!$result) {

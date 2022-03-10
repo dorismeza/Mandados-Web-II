@@ -1,10 +1,6 @@
 <?php
 include("BD/dbC.php");
 
-
-$title = '';
-$description= '';
-
 if  (isset($_GET['Id'])) {
   $Id = $_GET['Id'];
   $query = "SELECT * FROM clientes WHERE Id=$Id";
@@ -40,16 +36,16 @@ if (isset($_POST['update'])) {
       <div class="card card-body">
       <form action="ActualizarClientes.php?Id=<?php echo $_GET['Id']; ?>" method="POST">
         <div class="form-group">
-          <input name="Nombre" type="text"  required="" pattern="[a-zA-Z]+" class="form-control" value="<?php echo $Nombre; ?>" placeholder="Update Nombre">
+          <input name="Nombre" type="text"  required=" " pattern="[a-z A-Z]+" class="form-control" value="<?php echo $Nombre; ?>" placeholder="Update Nombre">
         </div>
         <div class="form-group">
-          <input name="Apellido" type="text"  required="" pattern="[a-zA-Z]+" class="form-control" value="<?php echo $Apellido; ?>" placeholder="Update Apellido">
+          <input name="Apellido" type="text"  required=" " pattern="[a-z A-Z]+" class="form-control" value="<?php echo $Apellido; ?>" placeholder="Update Apellido">
         </div>
         <div class="form-group">
-          <input name="Telefono" type="text"  required="" pattern="[0-9]+"class="form-control" value="<?php echo $Telefono; ?>" placeholder="Update Telefono">
+          <input name="Telefono" type="text"  required=" " pattern="[0-9]+"class="form-control" value="<?php echo $Telefono; ?>" placeholder="Update Telefono">
         </div>
         <div class="form-group">
-        <textarea name="Direccion" required="" class="form-control" cols="30" rows="10"><?php echo $Direccion;?></textarea>
+        <textarea name="Direccion" required=" " class="form-control" cols="30" rows="10"><?php echo $Direccion;?></textarea>
         </div>
         <button class="btn-success" name="update">
           Actualizar

@@ -2,12 +2,10 @@
 include("BD/dbC.php");
 
 
-$title = '';
-$description= '';
 
 if  (isset($_GET['IdEmpleado'])) {
-  $Id = $_GET['IdEmpleado'];
-  $query = "SELECT * FROM empleado WHERE Id=$Id";
+  $IdEmpleado = $_GET['IdEmpleado'];
+  $query = "SELECT * FROM empleado WHERE IdEmpleado=$IdEmpleado";
   $result = mysqli_query($conn, $query);
   if (mysqli_num_rows($result) == 1) {
     $row = mysqli_fetch_array($result);
@@ -19,7 +17,7 @@ if  (isset($_GET['IdEmpleado'])) {
 }
 
 if (isset($_POST['update'])) {
-  $id = $_GET['IdEmpleado'];
+  $IdEmpleado = $_GET['IdEmpleado'];
     $Nombre =  $_POST['NombreEmpleado'];
     $Apellido =  $_POST['ApellidoEmpleado'];
     $Telefono =  $_POST['TelefonoEmpleado'];
@@ -38,7 +36,7 @@ if (isset($_POST['update'])) {
   <div class="row">
     <div class="col-md-4 mx-auto">
       <div class="card card-body">
-      <form action="ActualizarClientes.php?Id=<?php echo $_GET['Id']; ?>" method="POST">
+      <form action="ActualizarEmpleados.php?IdEmpleado=<?php echo $_GET['IdEmpleado']; ?>" method="POST">
         <div class="form-group">
           <input name="Nombre" type="text"  required="" pattern="[a-zA-Z]+" class="form-control" value="<?php echo $Nombre; ?>" placeholder="Update Nombre">
         </div>
