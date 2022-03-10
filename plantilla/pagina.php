@@ -17,6 +17,7 @@
       <nav class="menu">
           <a href="pagina.php">Inicio</a>
           <a href="paginaCliente.php">Clientes</a>
+          <a ref="paginaUsuario.php">Usuarios</a>
           <a href="">Empleados</a>
           <a href="">Productos</a>
       </nav>
