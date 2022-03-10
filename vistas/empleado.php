@@ -1,6 +1,6 @@
 <?php
    session_start();
-    if(isset($_SESSION['username'])){
+    if(!isset($_SESSION['username'])){
         header("location: ../plantilla/paginaLogin.php" );
     }else{
 
@@ -67,10 +67,10 @@
             <td><?php echo $row['CorreoEmpleado']; ?></td>
             <td>
 
-              <a href="../ActualizarEmpleados.php?Id=<?php echo $row['IdEmpleado']?>" class="btn btn-secondary">
+              <a href="../ActualizarEmpleados.php?IdEmpleado=<?php echo $row['IdEmpleado']?>" class="btn btn-secondary">
                 <i class="fas fa-marker"></i>
               </a>
-              <a href="../EliminarEmpleados.php?Id=<?php echo $row['IdEmpleado']?>" class="btn btn-danger">
+              <a href="../EliminarEmpleados.php?IdEmpleado=<?php echo $row['IdEmpleado']?>" class="btn btn-danger">
                 <i class="far fa-trash-alt"></i>
               </a>
             </td>

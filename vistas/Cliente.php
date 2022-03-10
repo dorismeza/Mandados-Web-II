@@ -1,6 +1,6 @@
 <?php
    session_start();
-    if(isset($_SESSION['username'])){
+    if(!isset($_SESSION['username'])){
         header("location: ../plantilla/paginaLogin.php" );
     }else{
 
@@ -27,16 +27,16 @@
       <div class="card card-body">
         <form action="../GuardarClientes.php" method="POST">
           <div class="form-group">
-            <input type="text" name="Nombre" required="" pattern="[a-zA-Z]+" class="form-control" placeholder="Nombre" autofocus>
+            <input type="text" name="Nombre" required=" " pattern="[a-z A-Z]+" class="form-control" placeholder="Nombre" autofocus>
           </div>
           <div class="form-group">
-            <input name="Apellido" rows="2"  required="" pattern="[a-zA-Z]+" class="form-control" placeholder="Apellido"></input>
+            <input name="Apellido" rows="2"  required=" " pattern="[a-z A-Z]+" class="form-control" placeholder="Apellido"></input>
           </div>
           <div class="form-group">
-            <input name="Telefono" rows="2"  required="" pattern="[0-9]+" class="form-control" placeholder="Telefono"></input>
+            <input name="Telefono" rows="2"  required=" " pattern="[0-9]+" class="form-control" placeholder="Telefono"></input>
           </div>
           <div class="form-group">
-            <textarea name="Direccion" rows="2" required="" class="form-control" placeholder="Direccion"></textarea>
+            <textarea name="Direccion" rows="2" required=" " class="form-control" placeholder="Direccion"></textarea>
           </div>
           <input type="submit" name="GuardarClientes" class="btn btn-success btn-block" value="Guardar">
         </form>

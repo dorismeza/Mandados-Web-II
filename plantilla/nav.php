@@ -12,9 +12,8 @@
       <nav class="menu">
           <a href="pagina.php">Inicio</a>
           <a href="paginaCliente.php">Clientes</a>
-          <a href="">Empleados</a>
+          <a href="paginaEmpleado.php">Empleados</a>
           <a href="">Productos</a>
-          <a href= "paginaEmpleado.php"> Empleados </a>
       </nav>
   </div>
 </header>
